@@ -20,3 +20,7 @@ Django: Web Framework
                     python3 manage.py startapp <app_name>
     how to run it:
                     python3 manage.py runserver
+
+    django stores all the data in the table
+                    to create it we need
+                    python3 manage.py migrate
