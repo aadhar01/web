@@ -37,7 +37,6 @@ def add(request):
             # print(request.session["tasks"])
             # this following line after appending data takes us to the page where 
             # data has been appended
-            request.session.modified = True
             return HttpResponseRedirect(reverse("tasks:index"))
         else:
             return render(request, "tasks/add.html", {
